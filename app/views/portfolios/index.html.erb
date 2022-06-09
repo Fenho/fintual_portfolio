@@ -1,0 +1,10 @@
+<h1>Portfolios</h1>
+<ul>
+  <% @portfolios.each do |portfolio| %>
+    <li>
+      <div>
+        <%= button_to "#{portfolio.name}", "/portfolios/#{portfolio.id}", method: :get %>
+      </div>
+    </li>
+  <% end %>
+</ul>

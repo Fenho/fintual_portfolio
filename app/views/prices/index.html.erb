@@ -1,0 +1,13 @@
+<h1>Prices#index</h1>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Price</th>
+  </tr>
+  <% @prices.each do |price| %>
+    <tr>
+      <td><%=price.date %></td><td>
+      <td><%=price.price %></td>
+    </tr>
+  <% end %>
+</table>

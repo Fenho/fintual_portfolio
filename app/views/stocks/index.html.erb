@@ -1,0 +1,11 @@
+<h1>Stocks</h1>
+<ul>
+  <% @stocks.each do |stock| %>
+    <li>
+      <div>
+        <%= stock.name %>
+        <%= button_to "Prices", "/stocks/#{stock.id}/prices", method: :get %>
+      </div>
+    </li>
+  <% end %>
+</ul>
